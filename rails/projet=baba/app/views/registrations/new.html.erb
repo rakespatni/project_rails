@@ -1,0 +1,21 @@
+<html>
+<body bgcolor="#FFEFD5">
+
+<p align="center"><b><font size="6" color="#741788"><blink><i>&nbsp;Welcome
+To...</i></blink></font></b></p>
+<p align="center"><b>REGISTRATION PAGE</font></b></p>
+
+<% form_for(@registration,:url=>{:action=>'create'}) do |f| %>
+<%= f.error_messages %>
+<center>
+<p><b>name</b></p><%= f.text_field :name %></p>
+
+<p><b>Password</b></p><%= f.text_field :email %></p>
+<p><b>address</b></p><%= f.text_field :address %></p>
+<p><b>phone</b></p><%= f.text_field :phone %></p>
+
+<p><%= f.submit "Create new"%></p> 
+<% end %>
+</center>
+</body>
+</html>

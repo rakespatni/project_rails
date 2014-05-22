@@ -1,0 +1,1 @@
+<html><body><h1>new</h1><% form_for(order,:url=>{:action=>'createa'}) do |f| %><%=f.error_messages %><%= f.hidden_field :user_id %><%= f.hidden_field :item %></p><p><b>quantity</b></p><%= f.text_field :quantity %></p><%= f.hidden_field :total_amount %><p><%= f.submit "Create"%></p> <% end %></body></html>

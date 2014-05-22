@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+
+				.header2{
+			text-align:left;
+			position:absolute;
+			top:8px;
+			left:1200px;
+			width:150px;
+			height:100px;
+			color: red;
+			background: url(/images/a.png);
+			background-color:#585858 ;
+		}
+		.button{
+		
+		background: url(/images/a.png);
+		left:600px;
+		}
+
+
+		</style>
+		</head>
+<body bgcolor="#FFEFD5">
+			<div class="header2">
+			
+			<pre><form  action="/registrations" method="get">   <button class="button"><h2>Log Out</h2></button></form></pre> 
+			</div>		 
+
+<p><center>
+
+			
+			<pre><form  action="/available_items/avail_index" method="get"> 
+			
+			
+			<img src="/images/book.jpg">
+			<button class="button"><h2>Books</h2></button>
+			</form></pre> 
+			<pre><form  action="/available_items/phone_index" method="get"> 
+			<img src="/images/nokia.jpg">
+			<button class="button"><h2>Phones</h2></button></form></pre> 
+			<pre><form  action="/available_items/misc" method="get"> 
+			<img src="/images/sony.jpg">
+			<button class="button"><h2>Laptops</h2></button></form></pre> 
+			<pre><form  action="/orders/show_my_order" method="get"> 
+			
+			<button class="button"><h2>Show my Previous Order</h2></button></form></pre> 
+					 
+
+		
+</center>
+</p>
+<%= session[:nam] %>
+</body>
+</html>

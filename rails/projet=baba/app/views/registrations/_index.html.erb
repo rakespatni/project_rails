@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<table>
+<tr>
+<th>name&nbsp&nbsp&nbsp&nbsp</th>
+<th>price&nbsp&nbsp&nbsp&nbsp</th>
+<th>img&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+<th>waranty&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+<th>max_days&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+<th></th>
+</tr>
+
+
+<% for a in item%>
+<tr>
+
+
+<td><%= a.name%>&nbsp&nbsp&nbsp</td>
+<td><%= a.price%>&nbsp&nbsp&nbsp&nbsp</td>
+<td><%= a.img_url%>&nbsp&nbsp&nbsp</td>
+<td><%= a.warranty%>&nbsp&nbsp&nbsp</td>
+<td><%= a.max_days%>&nbsp&nbsp&nbsp&nbsp</td>
+<td><a href="/registrations/index/">click to order</a></td>
+</tr>
+
+<% end %>
+
+</table>
+
+</form>
+</body>
+</html>

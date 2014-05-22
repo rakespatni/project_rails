@@ -1,0 +1,20 @@
+<html>
+<body bgcolor="#FFEFD5">
+<center>
+<p>
+<b>ITEM ORDERED</b><%= @order.item %>
+</p>
+<p>
+<b>QUANTITIES:</b>
+<%= @order.quantity %></p>
+</p>
+<p><b>TOTAL AMOUNT:</b>
+<%= @order.total_amount %></p>
+<p><b>WILL BE DELIVERED IN:</b>
+<%= session[:days] %></p>
+<a href="/available_items/<%= @order.id %>/edit">Edit</a>
+<a href="/available_items/<%= @order.id %>/delete">Delete</a>
+<a href="/registrations/link">Home</a>
+</center>
+</body>
+</html>

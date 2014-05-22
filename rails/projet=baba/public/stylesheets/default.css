@@ -1,0 +1,15 @@
+.header1{
+			text-align:left;
+			position:absolute;
+			
+			left:600px;
+			width:150px;
+			height:100px;
+			color: red;
+			background: url(a.png);
+			background-color:#585858 ;
+		}
+		.a{
+		background:#202223;
+		background:url(/images/background.gif);
+		}

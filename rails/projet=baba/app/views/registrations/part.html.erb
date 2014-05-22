@@ -1,0 +1,7 @@
+<html>
+<body>
+<p>
+<%= render :partial=>"index",:locals=>{:item=>AvailableItems.find(:all,:conditions=>["name='phone'"])} %>
+<p>
+</body>
+</html>

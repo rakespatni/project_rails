@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<table><tr>
+<th>name</th>
+<th>price</th>
+<th>img</th>
+<th>waranty</th>
+<th>max_days</th>
+<th> </th>
+</tr>
+<tr>
+<% for a in @item%>
+<td><%=h a.name%></td>
+<td><%=h a.price%></td>
+<td><%=h a.img_url%></td>
+<td><%=h a.warranty%></td>
+<td><%=h a.max_days%></td>
+<td><a href="/available_items/phone_part<%= a.id %>">click here for this phone</a>
+</tr>
+
+<% end %>
+</table>
+</body>
+</html>

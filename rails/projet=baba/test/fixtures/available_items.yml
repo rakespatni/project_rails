@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  price: 9.99
+  img_url: MyString
+  warranty: 1
+  max_days: 1
+
+two:
+  name: MyString
+  price: 9.99
+  img_url: MyString
+  warranty: 1
+  max_days: 1

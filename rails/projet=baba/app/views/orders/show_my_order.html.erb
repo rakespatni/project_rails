@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+	.header2{
+			text-align:left;
+			position:absolute;
+			top:8px;
+			left:1200px;
+			width:150px;
+			height:100px;
+			color: red;
+			background: url(/images/a.png);
+			background-color:#585858 ;
+		}
+		.button{
+		
+		background: url(/images/a.png);
+		left:600px;
+		}
+	
+</style>
+</head>
+<body bgcolor="#FFEFD5">
+<center>
+<table bgcolor="Gainsboro 	" border="2" cellpaddind="10" cellspacing="20" width="400"><tr>
+
+<th>Item</th>
+<th>Quantity</th>
+<th>Total Amount</th>
+<th>Order Date</th>
+<th> </th>
+</tr>
+<tr>
+<% for a in @order%>
+<td><%=h a.item%></td>
+<td><%=h a.quantity%></td>
+<td><%=h a.total_amount%></td>
+<td><%=h a.created_at%></td>
+</tr>
+
+<% end %>
+</table>
+<div class="header2">
+			
+			<pre><form  action="/registrations/link" method="get">   <button class="button"><h2>HOME</h2></button></form></pre> 
+			</div>
+</body>
+</center>
+</html>

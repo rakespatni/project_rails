@@ -1,0 +1,15 @@
+<html>
+<body bgcolor="#FFEFD5">
+<center>
+<h1>new</h1>
+<% form_for(@order,:url=>{:action=>'createa'}) do |f| %>
+<%=f.error_messages %>
+<p><b>name</b></p><%= f.text_field :item %></p>
+
+<p><b>quantity</b></p><%= f.text_field :quantity %></p>
+
+<p><%= f.submit "Create"%></p> 
+<% end %>
+</center>
+</body>
+</html>
